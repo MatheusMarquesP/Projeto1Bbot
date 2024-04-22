@@ -21,7 +21,7 @@ bot.on('message', async (msg: TelegramBot.Message) => {
   const currentTime: Date = new Date();
   const currentHour: number = currentTime.getHours();
 
-  if (currentHour >= 7 && currentHour < 8) {
+  if (currentHour >= 9 && currentHour < 18) {
     bot.sendMessage(chatId, 'Informações em: https://uvv.br');
   } else {
     bot.sendMessage(
